@@ -28,10 +28,14 @@
 #  SUCH DAMAGE.
 #
 import sys
-import Image
 import rgb256
 import random
 
+try:
+    import Image
+except:
+    from PIL import Image
+    
 def tohex((r,g,b)):
     hexchars = "0123456789ABCDEF"
     return hexchars[r/16]+hexchars[r%16]+hexchars[g/16]+hexchars[g%16]+hexchars[b/16]+hexchars[b%16]

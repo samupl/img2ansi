@@ -142,7 +142,7 @@ for y in range(0, im.size[1]):
                 row = bisect(zonebounds,lum)
                 possibles = greyscale[row]
                 _o['ansichar'] = possibles[random.randint(0,len(possibles)-1)]
-            line += cprefix+"[38;5;"+color+"m"+_o['ansichar']+"\033[0;0;0m"
+            line += cprefix+"[38;5;"+color+"m"+_o['ansichar']+cprefix+"0;0;0m"
         else:
             line += " "
     print line

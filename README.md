@@ -9,8 +9,6 @@
 <ul>
 	<li>Python 2</li>
 	<li>Python module: Image</li>
-	<li>Python module: bisect</li>
-	<li>Python module: random</li>
 </ul>
 
 <h2>Usage</h2>
